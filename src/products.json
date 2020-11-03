@@ -1,0 +1,160 @@
+{
+	"products": {
+		"mens":{
+			"0": {
+				"name": "Black Skinny Jeans",
+				"description": "5-pocket jeans in washed stretch denim with a regular waist, zip fly and button, and skinny legs.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F39%2F03%2F3903676f4703d85bf4c8dfe1fd656c83af99eace.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jeans_skinny%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 18.00,
+				"tags": ["jeans","trousers"]
+			},
+			"1": {
+				"name": "Blue Skinny Jeans",
+				"description": "5-pocket jeans in washed stretch denim with a regular waist, zip fly and button, and skinny legs.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F39%2F42%2F3942d6903a120786aa9c5e5c61f3bcea8cac3040.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jeans_skinny%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 25.00,
+				"tags": ["trousers","jeans"]
+			},
+			"2": {
+				"name": "Black Joggers",
+				"description": "Sweatpants with an elasticated drawstring waist in a relaxed style.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F06%2Ff8%2F06f85e18b457b755e7892853a0d08ac3c0c2809a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_trousers_joggers%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 18.00,
+				"tags": ["trousers", "joggers","sweatpants"]
+			},
+			"3": {
+				"name": "Grey Joggers",
+				"description": "Sweatpants with an elasticated drawstring waist in a relaxed style with pockets.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F18%2F22%2F18228b752292ffecfbff523a77877fe6e4ce98d9.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_trousers_joggers%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 18.00,
+				"tags": ["trousers","joggers","sweatpants"]
+			},
+			"4": {
+				"name": "Pea coat",
+				"description": "Double-breasted pea coat in woven fabric with wide notch lapels and a buttonhole. Side pockets, two inner pockets, an adjustable tab and button at the cuffs, and a single back vent. Recycled polyester lining.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F7d%2Fdc%2F7ddc68033639abedc9ddc6a975d9103798fb8f1d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jacketscoats_jackets%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 59.99,
+				"tags": ["coat"]
+			},
+			"5": {
+				"name": "Twill plaid jacket",
+				"description": "Shirt jacket in cotton twill with a collar, zip down the front and yoke at the back. Flap chest pockets with a concealed press-stud, sleeves with a slit and button at the cuffs, and a straight-cut hem. Unlined.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fda%2F63%2Fda63367cff420065c8403595f7def93f8bd9cd5e.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jacketscoats_jackets%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 24.99,
+				"tags": ["jacket"]
+			},
+			"6": {
+				"name": "Twill shirt jacket",
+				"description": "Shirt jacket in sturdy cotton twill with a collar and buttons down the front. Flap chest pockets with a button, patch front pockets and long sleeves with buttoned cuffs. Unlined.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F6c%2F27%2F6c27abb7cd023584b5779467014fb0ff30adb5a3.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jacketscoats_jackets%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 24.99,
+				"tags": ["jacket"]
+			},
+			"7": {
+				"name": "Checked flannel shirt",
+				"description": "Shirt in soft, checked cotton flannel with a button-down collar, classic front, open chest pocket and yoke with a pleat and hanger at the back. Long sleeves with adjustable buttoning at the cuffs and a sleeve placket with a link button. Rounded hem, slightly longer at the back.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F54%2F79%2F5479b746d2a762bee8bfc533eaf573fbb550d695.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_shirts_flannel%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 19.99,
+				"tags": ["shirt"]
+			},
+			"8": {
+				"name": "Corduroy shirt Regular Fit",
+				"description": "Shirt in cotton corduroy with a button-down collar, classic front and yoke at the back. Open chest pocket and long sleeves with adjustable buttoning at the cuffs and a sleeve placket with a link button. Rounded hem.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F05%2Fbe%2F05be687359040f9989ce08f46186364caca7cd7e.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_shirts_longsleeved%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 17.99,
+				"tags": ["shirt"]
+			},
+			"9": {
+				"name": "Cotton denim shirt",
+				"description": "Shirt in soft cotton denim with a turn-down collar, classic front with press-studs, and a western yoke front and back. Flap chest pockets with a press-stud, long sleeves with fasteners at the cuffs and a sleeve placket with a link button. Rounded hem.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F8b%2F04%2F8b049a4ca0c42fbd861860a8ba596497b3b6ce02.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_shirts_denim%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 24.99,
+				"tags": ["shirt"]
+			}
+		},
+						
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		"womens": {
+			"10": {
+				"name": "Short faux shearling coat",
+				"description": "Short, wide coat in soft faux shearling with notch lapels, buttons down the front, long raglan sleeves and large patch pockets. Recycled polyester lining.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Ff5%2Fbb%2Ff5bb68c5948b8b43d854c9425b3b75a6479cb1fb.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_jacketscoats_coats%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 59.99,
+				"tags": ["coat"]
+			},
+			"11": {
+				"name": "Padded hooded jacket",
+				"description": "Padded, gently fitted jacket in woven fabric with a lined hood, stand-up collar and a zip and wind flap with press-studs down the front. Fleece-lined front pockets with a press-stud. Lined. Polyester filling.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fe4%2Fac%2Fe4ac6e4fe31fd3d6f5070eb2c897e2c79b5d0c3f.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_plus_jacketsblazers%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 49.99,
+				"tags": ["coat"]
+			},
+			"12": {
+				"name": "Stand-up collar puffer jacket",
+				"description": "Quilted, padded jacket in woven fabric with a stand-up collar, zip and wind flap with concealed press-studs down the front, and side pockets. Narrow elastication at the cuffs and hem. Lining and padding made from recycled polyester.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fed%2Fea%2Fedea296fc4a566aad7e6020368298dd1e215f93d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_jacketscoats_jackets%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 34.99,
+				"tags": ["coat"]
+			},
+			"13": {
+				"name": "Calf-length coat",
+				"description": "Calf-length coat in woven fabric with notch lapels, concealed press-studs down the front, discreet pockets in the side seams and long, slightly wider raglan sleeves.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fad%2Ff5%2Fadf528de9900c23496c27cc7f9f2897e7e8ed53c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_jacketscoats_coats%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 59.99,
+				"tags": ["coat"]
+			},
+			"14": {
+				"name": "Puff-sleeved dress",
+				"description": "Short, A-line dress in woven fabric with a slight sheen. Round neckline and an opening with narrow ties at the back of the neck. Long, voluminous puff sleeves with narrow elastication at the cuffs. Unlined.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fe2%2Fe7%2Fe2e755199b0194d16a96592483d6852f781b4643.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_dresses_aline%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B4%5D&call=url[file:/product/main]",
+				"price": 19.99,
+				"tags": ["dress"]
+			},
+			"15": {
+				"name": "V-neck velour dress",
+				"description": "Short, A-line dress in velour with a deep V-neck and long, wide sleeves with narrow cuffs. Gathered seams under the bust and at the hips for added width. Unlined.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F21%2Ff9%2F21f919b133ef5236eb9b8baa50da751b11f4336d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_dresses_aline%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 14.99,
+				"tags": ["dress"]
+			},
+			"16": {
+				"name": "Short sweatshirt dress",
+				"description": "Short, straight-style dress in lightweight sweatshirt fabric with long sleeves and ribbing around the neckline and cuffs.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F07%2F26%2F07266b73351b770fc1ced745399cd87b5cede648.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_dresses_shortdresses%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 12.99,
+				"tags": ["dress"]
+			},
+			"17": {
+				"name": "Sweatshirt",
+				"description": "Top in lightweight sweatshirt fabric in a relaxed fit with long raglan sleeves and ribbing around the neckline, cuffs and hem.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F28%2F00%2F28005ac4dacc27058803c1c6326d943ca0b860e2.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_hoodiesswetshirts_sweatshirts%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 12.99,
+				"tags": ["jumper","sweatshirt"]
+			},
+			"18": {
+				"name": "Printed sweatshirt",
+				"description": "Top in soft sweatshirt fabric with a round neckline, print motif on the front, low dropped shoulders, long sleeves and ribbing around the neckline, cuffs and hem. Soft brushed inside. The polyester content of the top is recycled.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc8%2F20%2Fc820be65ed7a3bed186604925a12086c38a66f6c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_hoodiesswetshirts_sweatshirts%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 24.99,
+				"tags": ["jumper","sweatshirt"]
+			},
+			"19": {
+				"name": "Cropped polo-neck top",
+				"description": "Cropped, boxy-style top in sweatshirt fabric made from a cotton blend with a ribbed polo neck. Dropped shoulders and long sleeves with ribbing at the cuffs. Soft brushed inside. The polyester content of the top is recycled.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F54%2Ff5%2F54f50136db6e09c2d5e3e36f6d271f9f4720b11b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_basics_tops_longsleeve%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 12.99,
+				"tags": ["jumper","sweatshirt"]
+			}
+		}		
+	}
+}
+
+				
