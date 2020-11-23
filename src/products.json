@@ -70,7 +70,50 @@
 				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F8b%2F04%2F8b049a4ca0c42fbd861860a8ba596497b3b6ce02.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_shirts_denim%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
 				"price": 24.99,
 				"tags": ["shirt"]
+			},
+			"10": {
+				"name": "Velvet jacket Skinny fit",
+				"description": "Single-breasted jacket in soft cotton velvet with peak lapels, a buttonhole on one lapel, a chest pocket, jetted front pockets and three inner pockets. One button at the front, decorative buttons at the cuffs and a double back vent. Lined. Skinny Fit – a slightly shorter style that shapes in at the chest and tapers sharply at the waist. This, combined with narrow shoulders and sleeves, creates a completely fitted silhouette.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fa1%2Fd1%2Fa1d18d779f3dd339ebdd72dcb2845f8cd1b5ad93.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_blazerssuits_blazers%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 59.99,
+				"tags": "suit"
+			},
+			"11": {
+				"name": "Jacket Skinny Fit",
+				"description": "Single-breasted jacket in a stretch weave with narrow notch lapels, a chest pocket, flap front pockets and an inner pocket. Decorative buttons at the cuffs and a single back vent. Lined. Skinny Fit – a slightly shorter style that shapes in at the chest and tapers sharply at the waist. This combined with narrow shoulders and sleeves creates a completely fitted silhouette.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fbc%2Fd5%2Fbcd586f82621ae5b1ef3efb8b868c1cef430dc00.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_blazerssuits_blazers%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 49.99,
+				"tags": "suit"
+			},
+			"12": {
+				"name": "Squared Jacket Skinny Fit",
+				"description": "Single-breasted jacket in a stretch weave with narrow notch lapels, a chest pocket, flap front pockets and an inner pocket. Decorative buttons at the cuffs and a single back vent. Lined. Skinny Fit – a slightly shorter style that shapes in at the chest and tapers sharply at the waist. This combined with narrow shoulders and sleeves creates a completely fitted silhouette.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fff%2F3b%2Fff3b82b36a910d84965f7d3e52e99ac36b4e9f38.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_blazerssuits_blazers%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 49.99,
+				"tags": "suit"
+			},
+			"13": {
+				"name": "Suit trousers Skinny Fit",
+				"description": "Suit trousers in a stretch weave with a concealed hook-and-eye fastener and zip fly. Diagonal side pockets, jetted back pockets, and an adjustable tab with buttons at the sides. Skinny Fit – a fit with slightly shorter legs that is close-fitting at the thighs, knees and ankles to create a completely fitted silhouette.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F41%2F12%2F41127f2c0e7c8b16fbcee7abbef7bbd610845780.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_blazerssuits_blazers%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 24.99,
+				"tags": "suit"
+			},
+			"14": {
+				"name": "Grey Jacket Skinny Fit",
+				"description": "Single-breasted jacket in a stretch weave with narrow notch lapels, a chest pocket, flap front pockets and an inner pocket. Decorative buttons at the cuffs and a single back vent. Lined. Skinny Fit – a slightly shorter style that shapes in at the chest and tapers sharply at the waist. This combined with narrow shoulders and sleeves creates a completely fitted silhouette.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F38%2F5b%2F385b9d445cdf6e1a04c354d4a23f80c515872a8b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_blazerssuits_blazers%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]",
+				"price": 49.99,
+				"tags": "suit"
+			},
+			"15": {
+				"name": "Jacket Slim Fit",
+				"description": "Single-breasted jacket in a textured weave made from a cotton blend with narrow notch lapels, a decorative buttonhole and imitation suede elbow patches. Chest pocket, flap front pockets and an inner pocket with a button. Fastening with two buttons at the front, decorative buttons at the cuffs and a single back vent. Partly lined. Slim Fit – a fit that tapers at the chest and waist which, combined with slightly narrower sleeves, creates a fitted silhouette.",
+				"img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fcb%2Fc3%2Fcbc312b21d3f46b5b1752f1fba8b42eb07cb1f11.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_blazerssuits_blazers%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+				"price": 49.99,
+				"tags": "suit"
 			}
+			
 		},
 						
 		
@@ -153,7 +196,7 @@
 				"price": 12.99,
 				"tags": ["jumper","sweatshirt"]
 			}
-		}		
+		}
 	}
 }
 

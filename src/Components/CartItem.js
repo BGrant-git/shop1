@@ -1,5 +1,5 @@
 import { makeStyles, Typography, Button, Grid } from '@material-ui/core';
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 
 const useStyles = makeStyles({
@@ -23,12 +23,18 @@ const useStyles = makeStyles({
 	},
 	btns: {
 		borderRadius: 0
-	}
+	},
 })
 
-const CartItem = ({ element }) => {
+const CartItem = ({ element, addToCart }) => {
 	const classes = useStyles()
-	
+
+	const[quantity, setQuantity] = useState(1)
+
+	const incQuantity = () => {
+		setQuantity(quantity + 1)
+	}
+
 	return (
 			<Grid container 
 				className={classes.root} 
@@ -37,8 +43,8 @@ const CartItem = ({ element }) => {
 				<Grid item xs={12} sm={8} className={classes.infoContainer}>
 					<img src={element.img} className={classes.image} />
 					<div className={classes.info}>
-						<Typography variant='h6'>
-							{element.name.toUpperCase()}
+						<Typography variant='h6' className={classes.title}>
+							{element.name}
 						</Typography>
 						<Typography>
 							£{element.price}
@@ -47,7 +53,7 @@ const CartItem = ({ element }) => {
 				</Grid>
 				<Grid item xs={5} sm={2} className={classes.qty} direction='column'>
 					<Typography>
-						QTY: 1
+						QTY: {quantity}
 					</Typography>
 				</Grid>
 				<Grid item xs={5} sm={2} direction='column'>
@@ -56,6 +62,10 @@ const CartItem = ({ element }) => {
 						color='primary' 
 						disableElevation 
 						className={classes.btns} 
+						onClick={() => {
+							addToCart(element)
+							incQuantity()
+						}}
 						>+</Button>
 					<Button 
 						variant='contained' 

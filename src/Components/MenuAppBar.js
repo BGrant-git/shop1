@@ -1,31 +1,33 @@
 import React from 'react';
 import { NavLink, Link, useHistory } from 'react-router-dom';
 import { makeStyles, useTheme, fade } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
-import { Button, Badge } from '@material-ui/core';
+import { 
+	Button, 
+	Badge, 
+	Grid, 
+	Menu,
+	MenuItem,
+	IconButton,
+	Typography,
+	Toolbar,
+	AppBar } from '@material-ui/core';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import InputBase from '@material-ui/core/InputBase';
 
+import MobileSearch from '../Components/MobileSearch'
 
 const useStyles = makeStyles((theme) => ({
   root: {
 		flexGrow: 1,
-		marginBottom: 66
+		marginBottom: 50
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+		marginRight: theme.spacing(2),
+		marginLeft: -100
 	},
-  title: {
-		flexGrow: 1,
-		marginRight: '5px'
+  titleMob: {
+		width: '50%',
 	},
 	btns: {
 		margin: '5px'
@@ -61,8 +63,7 @@ const useStyles = makeStyles((theme) => ({
 		marginTop: 4
 	},
   inputRoot: {
-		color: 'inherit',
-		width: '20vh'
+		color: 'inherit'
   },
   inputInput: {
     padding: theme.spacing(1, 1, 1, 1),
@@ -71,12 +72,15 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
 	},
 	cartLink: {
-			color: 'inherit',
-			textDecoration: 'none',
-			borderRadius: 30,
-			'&.active': {
-				border: '2px solid white'
-			}
+		color: 'inherit',
+		textDecoration: 'none',
+		borderRadius: 30,
+		'&.active': {
+			border: '2px solid white'
+		}
+	},
+	menuIcon: {
+		marginLeft: -10
 	}
 }));
 
@@ -97,56 +101,27 @@ const MenuAppBar = ({ handleSearchChange, getAppBarSearch, numOfItems }) => {
     setAnchorEl(null);
 	}
 
-	const handleEnter = (e) => {
+	const handleEnter = (event) => {
 		history.push('/results')
 		getAppBarSearch()
-		e.preventDefault()
+		event.preventDefault()
 	}
 
   return (
     <div className={classes.root}>
       <AppBar color='primary'>
         <Toolbar>
-
-          <Typography variant="h4" className={classes.title}>
-						<Link className={classes.link} to='/'>SHOP</Link>
-          </Typography>
-
-					<IconButton 
-						onClick={() => {
-							getAppBarSearch()
-						}}
-					>
-						<NavLink to='/results'>
-							<SearchIcon className={classes.searchBtn} />
-						</NavLink>
-					</IconButton>
-
-          <div className={classes.search}>
-						<form onSubmit={handleEnter}>
-            <InputBase
-							
-              placeholder="Search…"
-              classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput,
-              }}
-							inputProps={{ 'aria-label': 'search' }}
-							onChange={handleSearchChange}
-            />
-						</form>
-          </div>
-           
-          
-					{isMobile ? (
-						<div>
+					
+					{isMobile ? 
+						<Grid justify='space-between' container direction='row'>
 							<IconButton
 								aria-label="account of current user"
 								aria-controls="menu-appbar"
 								aria-haspopup="true"
 								onClick={handleMenu}
 								color="inherit"
-							>
+								className={classes.menuIcon}
+							  >
 								<MenuIcon />
 							</IconButton>
 							<Menu
@@ -163,7 +138,7 @@ const MenuAppBar = ({ handleSearchChange, getAppBarSearch, numOfItems }) => {
 								}}
 								open={open}
 								onClose={handleClose}
-							>
+							  >
 								<NavLink className={classes.link} to='/mens'>
 									<MenuItem onClick={handleClose}>
 										MEN'S
@@ -175,27 +150,43 @@ const MenuAppBar = ({ handleSearchChange, getAppBarSearch, numOfItems }) => {
 									</MenuItem>
 								</NavLink>
 							</Menu>
-						</div>  
-							)
-						: (
-							<>
-							<NavLink className={classes.link} to='/mens'>
-								<Button 
-									className={classes.btns} 
-									variant='contained' color='primary'>
-										Men's
-								</Button>   
-							</NavLink>     
-							<NavLink className={classes.link} to='/womens'>
-								<Button 
-									className={classes.btns} 
-									variant='contained' color='primary'>
-										Women's
-								</Button>   
-							</NavLink> 
-							</>
-						)
-					}
+							<Typography variant="h4" className={classes.titleMob}>
+								<Link className={classes.link} to='/'>LOGO</Link>
+							</Typography>							
+						</Grid> 
+						: 				
+						<Grid container direction='row' >
+							<Grid item container direction='row' justify='center' sm={12} style={{marginLeft: 115}}>
+								<NavLink className={classes.link} to='/mens'>
+									<Button 
+										className={classes.btns} 
+										variant='contained' 
+										color='primary'>
+											Men's
+									</Button>   
+								</NavLink>  
+								<Typography variant="h4">
+									<Link className={classes.link} to='/'>LONGLOGO</Link>
+								</Typography>   
+								<NavLink className={classes.link} to='/womens'>
+									<Button 
+										className={classes.btns} 
+										variant='contained' 
+										color='primary'>
+											Women's
+									</Button>   
+								</NavLink> 
+							</Grid>
+						</Grid>
+						}
+
+					<IconButton>
+						<MobileSearch 
+							handleSearchChange={handleSearchChange} 
+							getAppBarSearch={getAppBarSearch}
+							handleEnter={handleEnter}
+							/>
+					</IconButton>
 					<NavLink to='/cart' className={classes.cartLink}>
 						<IconButton  aria-label="shopping cart">
 							<Badge 

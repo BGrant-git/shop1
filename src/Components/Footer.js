@@ -24,7 +24,7 @@ const Footer = () => {
         <Toolbar>          
           <Typography variant="body2" className={classes.title}>
             Made by Ben G <br />
-						All products are fabricated and info from H&M used
+						All products are fabricated and info from H&M
           </Typography>
         </Toolbar>
       </AppBar>

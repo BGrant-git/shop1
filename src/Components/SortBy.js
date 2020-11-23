@@ -9,7 +9,8 @@ import Menu from '@material-ui/core/Menu';
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-    marginTop: 5
+    marginTop: 5,
+    backgroundColor: '#e0e0e0'
   },
 }));
 

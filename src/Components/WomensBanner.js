@@ -22,7 +22,7 @@ const useStyles = makeStyles({
 		color: 'white',
 		transform: 'translate(-50%, 8%)',
 		border: '4px solid white',
-		padding: '2px'
+		paddingBottom: 5
    }
   
 })

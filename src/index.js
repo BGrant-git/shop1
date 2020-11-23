@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
-import './index.css';
-import App from './App';
+import { BrowserRouter as Router } from 'react-router-dom'
+
+import '../src/index.css';
+import App from './App.js';
 
 const theme = createMuiTheme({
   palette: {
     primary: {
-      light: '##4f5b62',
-      main: '#263238',
-      dark: '#000a12',
+      light: '#484848',
+      main: '#212121',
+      dark: '#000000',
       contrastText: '#fff',
     },
     secondary: {
@@ -19,14 +21,29 @@ const theme = createMuiTheme({
       contrastText: '#000',
     },
   },
+  typography: {
+    fontFamily: [
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+  }
 });
 
-ReactDOM.render(
-  <React.StrictMode>
+ReactDOM.render(    
     <ThemeProvider theme={theme}>
-      <App />
+      <Router basename={process.env.PUBLIC_URL}>
+        <App />
+      </Router>
     </ThemeProvider>
-  </React.StrictMode>,
+    ,
   document.getElementById('root')
 );
 

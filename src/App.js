@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { Route, Switch,  BrowserRouter as Router} from 'react-router-dom'
-import Grid from '@material-ui/core/Grid'
+import { Route, Switch, HashRouter } from 'react-router-dom'
+import { Grid } from '@material-ui/core'
 import { ToastsContainer, ToastsStore, ToastsContainerPosition } from 'react-toasts';
+
+
 import products from './products.json'
 
 import MenuAppBar from './Components/MenuAppBar'
@@ -11,12 +13,19 @@ import Mens from './Pages/Mens'
 import Womens from './Pages/Womens'
 import Results from './Pages/Results'
 import Cart from './Pages/Cart'
+import Product from './Pages/Product'
+import ScrollToTop from './Components/ScrollToTop'
+import TrackVisibility from 'react-on-screen';
+
+// get cursor to go to search field [ ]
 
 const App = () => {
   
   const[input, setInput] = useState('')
   const[search, setSearch] = useState('')
-  const[results, setResults] = useState([])
+  // const[results, setResults] = useState([])
+  // const[viewProduct, setViewProduct] = useState('')
+  const[cartPrice, setCartPrice] = useState('')
 
   function useStickyState(defaultValue, key) {
     const [value, setValue] = useState(() => {
@@ -30,16 +39,16 @@ const App = () => {
     }, [key, value]);
     return [value, setValue];
   }
-  const[cartItems, setCartItems] = useStickyState('')
-  const[cartPrice, setCartPrice] = useState('')
+  const[cartItems, setCartItems] = useStickyState('','cart')
+  const[results, setResults] = useStickyState('','results')
+  const[viewProduct, setViewProduct] = useStickyState('','product')
 
-  let numOfItems = cartItems.length
-  
+  let numOfItems = cartItems.length  
   let productsWomens = Object.entries(products.products.womens)
   let productsMens = Object.entries(products.products.mens)
   let productsAll = productsMens.concat(productsWomens)
   
-  const handleSearchChange = (event) => {
+  const handleSearchChange = event => {
     setInput(event.target.value)    
   }
 
@@ -52,7 +61,7 @@ const App = () => {
     setResults(result)
   }, [search]) 
 
-  const addToCart = (event) => {
+  const addToCart = event => {
     setCartItems([...cartItems, event])
     ToastsStore.error("Item added")
   }
@@ -71,9 +80,25 @@ const App = () => {
     }
   }, [cartItems]);
 
+  const getViewProduct = event => {
+    setViewProduct(event)
+  }
+  
+	const scrollToTop = () => {
+		window.scroll({
+			top: 0,
+			left: 0,
+			behavior: 'smooth',
+		});
+	}
+
   return (
-    <Grid container direction="column" >
-      <Router>
+    <Grid 
+      container 
+      direction="column" 
+      style={{maxWidth:1300,margin:'auto'}}
+      >
+      <HashRouter>
         <Grid item>
           <MenuAppBar 
             handleSearchChange={handleSearchChange} 
@@ -83,26 +108,27 @@ const App = () => {
         </Grid>  
         <ToastsContainer store={ToastsStore} position={ToastsContainerPosition.BOTTOM_CENTER} />
         <Switch>          
-          <Route exact path='/'>
-            <Grid item container>
-              <Grid item xs={false} sm={2} />
-              <Grid item xs={12} sm={8}>
-                <Home />
-              </Grid>
-              <Grid item xs={false} sm={2} />
+          <Route exact path='/'>  
+          <Grid item container>
+              <Grid item xs={false} sm={1} />
+                <Grid item xs={12} md={10}>       
+                  <Home productsMens={productsMens} getViewProduct={getViewProduct} />
+                </Grid>   
+              <Grid item xs={false} sm={1} />  
             </Grid>
           </Route>
           
           <Route path='/mens' >
             <Grid item container>
               <Grid item xs={false} sm={2} />
-              <Grid item xs={12} sm={8}>
-                <Mens 
-                  productsMens={productsMens}
-                  addToCart={addToCart}
-                  />
-              </Grid>
-              <Grid item xs={false} sm={2} />
+                <Grid item xs={12} sm={8}>
+                  <Mens 
+                    productsMens={productsMens}
+                    addToCart={addToCart}
+                    getViewProduct={getViewProduct}
+                    />
+                </Grid>
+                <Grid item xs={false} sm={2} />
             </Grid>
           </Route>
           
@@ -113,6 +139,7 @@ const App = () => {
                   <Womens 
                     productsWomens={productsWomens}
                     addToCart={addToCart}
+                    getViewProduct={getViewProduct}
                     />
                 </Grid>
               <Grid item xs={false} sm={2} />
@@ -137,18 +164,32 @@ const App = () => {
                     cart={cartItems} 
                     cartPrice={cartPrice}
                     clearCart={clearCart}
+                    addToCart={addToCart}
                     />
                 </Grid>
               <Grid item xs={false} sm={2} />
             </Grid>
           </Route>  
 
+          <Route path='/product'>
+            <Grid item container>
+              <Grid item xs={false} sm={2} />
+                <Grid item xs={12} sm={8}>
+                  <Product viewProduct={viewProduct} addToCart={addToCart} />
+                </Grid>
+              <Grid item xs={false} sm={2} />
+            </Grid>
+          </Route>  
         </Switch>
+        
+        <TrackVisibility>
+          <ScrollToTop scrollToTop={scrollToTop}/>
+        </TrackVisibility>
 
         <Grid item>
           <Footer />
         </Grid>
-      </Router>
+      </HashRouter>
     </Grid>
   )
 }

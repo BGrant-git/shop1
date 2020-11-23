@@ -1,23 +1,25 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid'
+import { Grid, Button } from '@material-ui/core/'
 
 import MensBanner from '../Components/MensBanner'
-import SearchBar from '../Components/SearchBar'
+import SortBy from '../Components/SortBy'
 import MensClothesItem from '../Components/MensClothesItem'
 
-const Mens = ({ productsMens, addToCart }) => {
+const Mens = ({ productsMens, addToCart, getViewProduct }) => {
+
 	return (
 		<div>
 			<Grid container direction='column'>
 				<Grid item><MensBanner /></Grid>
-				<Grid item><SearchBar /></Grid>
+				<Grid item><SortBy /></Grid>
 				<Grid container>
 					{productsMens.map((item, i) => (
-						<Grid item md={4} sm={6} xs={12} key={i}>
-						<MensClothesItem 
-							element={item[1]}
-							addToCart={addToCart}
-							/>
+						<Grid item md={4} sm={6} xs={12} key={i} style={{marginBottom: 5}}>
+							<MensClothesItem 
+								element={item[1]}
+								addToCart={addToCart}
+								getViewProduct={getViewProduct}
+								/>
 						</Grid>
 					))}
 				</Grid>
